@@ -66,7 +66,7 @@ export default function AdminPage() {
     <div className="min-h-screen bg-off-white">
       <header className="bg-primary text-white py-4 px-4 shadow-md">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Administration — Versigny</h1>
+          <h1 className="text-xl font-bold">Administration — Pour un village dynamique</h1>
           <div className="flex gap-3">
             <a href="/" className="text-sm text-green-200 hover:text-white transition-colors">
               Voir le site
