@@ -4,7 +4,7 @@ export default function Footer() {
       {/* Bandeau site — comme le bas du flyer Louveciennes */}
       <div className="bg-primary text-white py-8 text-center">
         <p className="text-3xl md:text-5xl font-bold tracking-wide">
-          versigny2026.fr
+          pourunvillagedynamique.fr
         </p>
       </div>
       {/* Infos légales */}
