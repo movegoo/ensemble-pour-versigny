@@ -8,14 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["var(--font-heading)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
+      },
       colors: {
-        primary: "#1B5E20",
-        "primary-light": "#388E3C",
-        accent: "#66BB6A",
-        rose: "#C2185B",
-        "rose-light": "#E91E63",
-        "off-white": "#EEEEEE",
-        dark: "#212121",
+        primary: {
+          DEFAULT: "#1B5E20",
+          light: "#388E3C",
+          50: "#E8F5E9",
+          100: "#C8E6C9",
+        },
+        rose: {
+          DEFAULT: "#C2185B",
+          light: "#E91E63",
+          50: "#FCE4EC",
+          100: "#F8BBD0",
+        },
+        "off-white": "#F5F5F5",
+        dark: "#1A1A1A",
       },
     },
   },

@@ -8,8 +8,7 @@ export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto bg-white shadow-lg">
-      {/* Pas de navbar sticky — le flyer est un document continu */}
+    <main className="max-w-5xl mx-auto bg-white shadow-2xl">
       <Hero />
       <IdeaGrid ideas={ideas} />
       <Team />
