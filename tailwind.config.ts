@@ -12,6 +12,8 @@ const config: Config = {
         primary: "#1B5E20",
         "primary-light": "#388E3C",
         accent: "#66BB6A",
+        rose: "#C2185B",
+        "rose-light": "#E91E63",
         "off-white": "#EEEEEE",
         dark: "#212121",
       },

@@ -17,8 +17,8 @@ export default function IdeaGrid({ ideas }: { ideas: Idea[] }) {
       <div className="max-w-5xl mx-auto px-4">
         {/* Grille 2x4 comme le flyer — cards serrées */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {sorted.map((idea) => (
-            <IdeaCard key={idea.id} idea={idea} />
+          {sorted.map((idea, i) => (
+            <IdeaCard key={idea.id} idea={idea} index={i} />
           ))}
         </div>
       </div>
