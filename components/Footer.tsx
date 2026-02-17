@@ -1,26 +1,41 @@
 export default function Footer() {
   return (
-    <footer>
-      {/* Bandeau domaine — style flyer */}
-      <div className="bg-gradient-to-r from-primary to-primary-light text-white py-10 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-1/4 w-48 h-48 bg-white rounded-full blur-3xl" />
+    <footer id="contact">
+      {/* CTA section */}
+      <div className="relative py-24 overflow-hidden bg-dark">
+        <div className="absolute inset-0">
+          <div className="absolute top-[-30%] left-[10%] w-[40%] h-[80%] rounded-full bg-primary/15 blur-[100px]" />
+          <div className="absolute bottom-[-30%] right-[10%] w-[35%] h-[70%] rounded-full bg-rose/10 blur-[100px]" />
         </div>
-        <div className="relative z-10">
-          <p className="text-3xl md:text-5xl font-heading font-900 tracking-wide">
-            pourunvillagedynamique.fr
+
+        <div className="relative z-10 text-center px-6">
+          <p className="text-white/40 text-xs font-body tracking-widest uppercase mb-4">
+            Retrouvez-nous en ligne
           </p>
+          <p className="text-4xl md:text-6xl font-heading font-bold text-white">
+            pourunvillage
+            <span className="bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">
+              dynamique
+            </span>
+            .fr
+          </p>
+          <div className="mt-8">
+            <a
+              href="mailto:contact@pourunvillagedynamique.fr"
+              className="inline-block px-8 py-3 border border-white/15 text-white/70 font-body text-sm rounded-full hover:bg-white/10 hover:text-white transition-all duration-300"
+            >
+              Nous contacter
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Légal */}
-      <div className="bg-dark text-gray-500 py-5 px-4 text-center">
-        <p className="text-xs font-body font-light">
-          Pour un village dynamique — Liste citoyenne, élections municipales 2026 — Versigny (02800)
-        </p>
-        <p className="text-xs font-body font-light mt-1 text-gray-600">
-          © 2026 Pour un village dynamique
-        </p>
+      {/* Bottom bar */}
+      <div className="bg-dark border-t border-white/5 py-5 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-[11px] font-body text-white/25">
+          <p>© 2026 Pour un village dynamique — Versigny (02800)</p>
+          <p>Liste citoyenne pour les élections municipales</p>
+        </div>
       </div>
     </footer>
   );

@@ -7,46 +7,35 @@ interface Idea {
   order: number;
 }
 
-const themes = [
-  {
-    bg: "bg-primary",
-    bgLight: "bg-primary-50",
-    gradient: "from-primary-50 to-primary-100/50",
-    ring: "ring-primary/20",
-  },
-  {
-    bg: "bg-rose",
-    bgLight: "bg-rose-50",
-    gradient: "from-rose-50 to-rose-100/50",
-    ring: "ring-rose/20",
-  },
+const accents = [
+  { border: "hover:border-primary/40", tag: "bg-primary/8 text-primary", dot: "bg-primary" },
+  { border: "hover:border-rose/40", tag: "bg-rose/8 text-rose", dot: "bg-rose" },
 ];
 
 export default function IdeaCard({ idea, index }: { idea: Idea; index: number }) {
-  const theme = themes[index % 2];
+  const accent = accents[index % 2];
 
   return (
-    <div className={`group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 ring-1 ${theme.ring} hover:-translate-y-1 flex flex-col`}>
-      {/* Zone visuelle */}
-      <div className={`w-full aspect-[4/3] bg-gradient-to-br ${theme.gradient} flex items-center justify-center relative`}>
-        <span className="text-5xl md:text-6xl group-hover:scale-110 transition-transform duration-300">
-          {idea.icon}
-        </span>
+    <div className={`group p-6 rounded-2xl border border-gray-100 bg-white ${accent.border} transition-all duration-300 hover:shadow-xl hover:shadow-gray-100/80 flex flex-col`}>
+      {/* Icon */}
+      <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+        {idea.icon}
       </div>
 
-      {/* Bandeau titre */}
-      <div className={`${theme.bg} text-white px-4 py-2.5`}>
-        <h3 className="font-heading font-bold text-xs md:text-sm uppercase tracking-wider">
-          {idea.title}
-        </h3>
-      </div>
+      {/* Tag */}
+      <span className={`inline-block self-start text-[10px] font-body font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full mb-3 ${accent.tag}`}>
+        {idea.category}
+      </span>
+
+      {/* Title */}
+      <h3 className="font-heading font-semibold text-dark text-base mb-2 leading-snug">
+        {idea.title}
+      </h3>
 
       {/* Description */}
-      <div className="px-4 py-3 flex-1">
-        <p className="text-gray-600 text-xs md:text-sm font-body font-light leading-relaxed">
-          {idea.description}
-        </p>
-      </div>
+      <p className="font-body text-sm text-dark/50 leading-relaxed flex-1">
+        {idea.description}
+      </p>
     </div>
   );
 }

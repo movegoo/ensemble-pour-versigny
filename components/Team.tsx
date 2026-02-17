@@ -7,27 +7,29 @@ const members = [
 
 export default function Team() {
   return (
-    <section id="equipe" className="py-10 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="font-heading font-800 text-2xl md:text-3xl text-dark">
+    <section id="equipe" className="py-24 bg-gray-50/50">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-rose/60 mb-3">
+            Candidats
+          </span>
+          <h2 className="font-heading font-bold text-3xl md:text-5xl text-dark">
             L&apos;équipe
           </h2>
-          <div className="mt-2 mx-auto w-16 h-1 bg-gradient-to-r from-primary to-rose rounded-full" />
-          <p className="mt-4 text-gray-500 text-sm font-body font-light max-w-xl mx-auto">
+          <p className="mt-4 text-dark/40 font-body text-base max-w-lg mx-auto">
             Des habitants engagés pour leur village, portés par des valeurs
             de proximité et de transparence.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {members.map((member, i) => (
-            <div key={i} className="text-center group">
-              <div className="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-full flex items-center justify-center text-4xl md:text-5xl mb-3 bg-gradient-to-br from-primary-50 to-rose-50 ring-2 ring-primary/10 group-hover:ring-primary/30 transition-all duration-300 group-hover:shadow-lg">
+            <div key={i} className="group text-center">
+              <div className="w-28 h-28 md:w-32 md:h-32 mx-auto rounded-2xl bg-gradient-to-br from-primary/5 to-rose/5 border border-gray-100 flex items-center justify-center text-5xl mb-4 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300 group-hover:-translate-y-1">
                 {member.placeholder}
               </div>
-              <h3 className="font-heading font-bold text-dark text-sm">{member.name}</h3>
-              <p className="text-xs text-gray-400 font-body font-light">{member.role}</p>
+              <h3 className="font-heading font-semibold text-dark text-sm">{member.name}</h3>
+              <p className="text-xs text-dark/40 font-body mt-0.5">{member.role}</p>
             </div>
           ))}
         </div>
