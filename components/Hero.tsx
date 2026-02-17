@@ -1,19 +1,20 @@
 export default function Hero() {
   return (
-    <section className="bg-primary text-white">
-      <div className="max-w-6xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Ensemble pour Versigny
+    <section>
+      <div className="bg-primary text-white py-8 text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-2">
+          Pour une commune écologique, citoyenne et solidaire !
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-green-100">
-          Construisons ensemble l&apos;avenir de notre commune
+        <p className="text-base md:text-lg text-green-200 max-w-3xl mx-auto px-4">
+          Retrouvez et discutez quelques-unes des propositions de notre programme pour Versigny.
         </p>
-        <div className="w-full max-w-3xl mx-auto h-64 md:h-80 bg-primary-light/30 rounded-2xl flex items-center justify-center border-2 border-dashed border-white/40">
-          <p className="text-white/70 text-lg">📸 Photo de groupe de l&apos;équipe</p>
+      </div>
+      <div className="bg-primary-light">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <div className="w-full h-64 md:h-80 bg-white/20 rounded-lg flex items-center justify-center border-2 border-dashed border-white/50">
+            <p className="text-white/80 text-lg">📸 Photo de groupe de l&apos;équipe</p>
+          </div>
         </div>
-        <p className="mt-6 text-lg text-green-100">
-          Municipales 2026 — Versigny (02800)
-        </p>
       </div>
     </section>
   );
