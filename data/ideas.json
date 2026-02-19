@@ -2,41 +2,41 @@
   {
     "id": "1",
     "title": "Travaux et urbanisme",
-    "icon": "🔨",
-    "description": "Entretien des voiries et chemins de promenade. Rénovation des lieux de culte (église et cimetière). Plan éclairage public LED avec extinction nocturne partielle. Rénovation de la cuisine de la salle des fêtes.",
+    "icon": "\ud83d\udd28",
+    "description": "Entretien des voiries et chemins de promenade. R\u00e9novation des lieux de culte (\u00e9glise et cimeti\u00e8re). Plan \u00e9clairage public LED avec extinction nocturne partielle. R\u00e9novation de la cuisine de la salle des f\u00eates.",
     "category": "Travaux",
     "order": 1
   },
   {
     "id": "2",
     "title": "Loisirs et jeunesse",
-    "icon": "🎯",
-    "description": "Organisation de rencontres intergénérationnelles. Mise en place d'un « café citoyen ». Développement des équipements de loisirs.",
+    "icon": "\ud83c\udfaf",
+    "description": "Organisation de rencontres interg\u00e9n\u00e9rationnelles. Mise en place d\u2019un \u00ab\u202fcaf\u00e9 citoyen\u202f\u00bb. D\u00e9veloppement des \u00e9quipements de loisirs.",
     "category": "Loisirs",
     "order": 2
   },
   {
     "id": "3",
     "title": "Vie du village",
-    "icon": "🏘️",
-    "description": "Création d'un dépôt de pain et point relais. Dynamiser le comité des fêtes et relancer les journées à thème. Relancer la communication via la page Facebook.",
+    "icon": "\ud83c\udfe8\ufe0f",
+    "description": "Cr\u00e9ation d\u2019un d\u00e9p\u00f4t de pain et point relais. Dynamiser le comit\u00e9 des f\u00eates et relancer les journ\u00e9es \u00e0 th\u00e8me. Relancer la communication via la page Facebook.",
     "category": "Village",
     "order": 3
   },
   {
     "id": "4",
-    "title": "Finances et fiscalité",
-    "icon": "💰",
-    "description": "Maîtrise du budget communal et pas d'augmentation d'impôts.",
+    "title": "Finances et fiscalit\u00e9",
+    "icon": "\ud83d\udcb0",
+    "description": "Ma\u00eetrise du budget communal et pas d\u2019augmentation d\u2019imp\u00f4ts.",
     "category": "Finances",
     "order": 4
   },
   {
     "id": "5",
-    "title": "Citoyenneté et civilité",
-    "icon": "🤝",
-    "description": "Encourager la civilité et le respect des règles de savoir-vivre. Organiser une journée « Nettoyons la nature ». Mise en place d'une charte de la citoyenneté.",
-    "category": "Citoyenneté",
+    "title": "Citoyennet\u00e9 et civilit\u00e9",
+    "icon": "\ud83e\udd1d",
+    "description": "Encourager la civilit\u00e9 et le respect des r\u00e8gles de savoir-vivre. Organiser une journ\u00e9e \u00ab\u202fNettoyons la nature\u202f\u00bb. Mise en place d\u2019une charte de la citoyennet\u00e9.",
+    "category": "Citoyennet\u00e9",
     "order": 5
   }
 ]
