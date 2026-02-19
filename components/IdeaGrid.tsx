@@ -27,9 +27,15 @@ export default function IdeaGrid({ ideas }: { ideas: Idea[] }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {sorted.map((idea, i) => (
+        {/* 3 cards en haut, 2 centrées en bas */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {sorted.slice(0, 3).map((idea, i) => (
             <IdeaCard key={idea.id} idea={idea} index={i} />
+          ))}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 max-w-[calc(66.666%+0.625rem)] mx-auto">
+          {sorted.slice(3).map((idea, i) => (
+            <IdeaCard key={idea.id} idea={idea} index={i + 3} />
           ))}
         </div>
       </div>

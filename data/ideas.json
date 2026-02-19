@@ -1,66 +1,42 @@
 [
   {
     "id": "1",
-    "title": "Transition écologique",
-    "icon": "🌿",
-    "description": "Développer les énergies renouvelables, végétaliser les espaces publics et encourager les circuits courts pour une commune plus verte.",
-    "category": "Écologie",
+    "title": "Travaux et urbanisme",
+    "icon": "🔨",
+    "description": "Entretien des voiries et chemins de promenade. Rénovation des lieux de culte (église et cimetière). Plan éclairage public LED avec extinction nocturne partielle. Rénovation de la cuisine de la salle des fêtes.",
+    "category": "Travaux",
     "order": 1
   },
   {
     "id": "2",
-    "title": "École et jeunesse",
-    "icon": "🎓",
-    "description": "Rénover les bâtiments scolaires, créer des activités périscolaires variées et soutenir les associations de jeunes.",
-    "category": "Éducation",
+    "title": "Loisirs et jeunesse",
+    "icon": "🎯",
+    "description": "Organisation de rencontres intergénérationnelles. Mise en place d'un « café citoyen ». Développement des équipements de loisirs.",
+    "category": "Loisirs",
     "order": 2
   },
   {
     "id": "3",
-    "title": "Solidarité et lien social",
-    "icon": "🤝",
-    "description": "Renforcer l'aide aux aînés, créer un espace intergénérationnel et soutenir les familles en difficulté.",
-    "category": "Solidarité",
+    "title": "Vie du village",
+    "icon": "🏘️",
+    "description": "Création d'un dépôt de pain et point relais. Dynamiser le comité des fêtes et relancer les journées à thème. Relancer la communication via la page Facebook.",
+    "category": "Village",
     "order": 3
   },
   {
     "id": "4",
-    "title": "Budget participatif",
-    "icon": "💡",
-    "description": "Allouer une part du budget communal aux projets proposés et votés directement par les habitants.",
-    "category": "Démocratie",
+    "title": "Finances et fiscalité",
+    "icon": "💰",
+    "description": "Maîtrise du budget communal et pas d'augmentation d'impôts.",
+    "category": "Finances",
     "order": 4
   },
   {
     "id": "5",
-    "title": "Cadre de vie",
-    "icon": "🏡",
-    "description": "Embellir le centre-bourg, entretenir les chemins ruraux et améliorer l'éclairage public avec des solutions basse consommation.",
-    "category": "Urbanisme",
+    "title": "Citoyenneté et civilité",
+    "icon": "🤝",
+    "description": "Encourager la civilité et le respect des règles de savoir-vivre. Organiser une journée « Nettoyons la nature ». Mise en place d'une charte de la citoyenneté.",
+    "category": "Citoyenneté",
     "order": 5
-  },
-  {
-    "id": "6",
-    "title": "Culture et patrimoine",
-    "icon": "🎭",
-    "description": "Valoriser le patrimoine local, organiser des événements culturels et soutenir les artistes du territoire.",
-    "category": "Culture",
-    "order": 6
-  },
-  {
-    "id": "7",
-    "title": "Mobilité douce",
-    "icon": "🚲",
-    "description": "Créer des pistes cyclables sécurisées, développer le covoiturage et améliorer la desserte en transports en commun.",
-    "category": "Mobilité",
-    "order": 7
-  },
-  {
-    "id": "8",
-    "title": "Sécurité et tranquillité",
-    "icon": "🛡️",
-    "description": "Renforcer la présence de terrain, améliorer la vidéoprotection et organiser des réunions de quartier régulières.",
-    "category": "Sécurité",
-    "order": 8
   }
 ]

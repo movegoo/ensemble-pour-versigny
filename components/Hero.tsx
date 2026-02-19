@@ -22,8 +22,11 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="font-body text-lg md:text-xl text-white/50 max-w-xl mx-auto mb-10 font-light leading-relaxed">
-          Ensemble, construisons un avenir durable, solidaire et citoyen pour notre commune.
+        <p className="font-body text-xl md:text-2xl text-white/40 italic mb-2">
+          « Avec vous, pour vous »
+        </p>
+        <p className="font-body text-base md:text-lg text-white/50 max-w-xl mx-auto mb-10 font-light leading-relaxed">
+          Nathalie CARLIER et son équipe — 11 candidats engagés pour Versigny.
         </p>
 
         <div className="flex gap-4 justify-center">
@@ -31,7 +34,7 @@ export default function Hero() {
             href="#propositions"
             className="px-8 py-3 bg-primary text-white font-body font-medium text-sm rounded-full hover:bg-primary-light transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
           >
-            Nos propositions
+            Notre programme
           </a>
           <a
             href="#equipe"

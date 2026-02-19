@@ -1,8 +1,15 @@
 const members = [
-  { name: "Nom Prénom", role: "Tête de liste", placeholder: "👩" },
-  { name: "Nom Prénom", role: "Adjoint(e)", placeholder: "👨" },
-  { name: "Nom Prénom", role: "Conseiller(ère)", placeholder: "👩" },
-  { name: "Nom Prénom", role: "Conseiller(ère)", placeholder: "👨" },
+  { name: "Nathalie CARLIER", role: "Tête de liste" },
+  { name: "Georges CHARALAMBOUS", role: "Candidat" },
+  { name: "Emilie GAUTHIER", role: "Candidate" },
+  { name: "Pascal CERVOISE", role: "Candidat" },
+  { name: "Chloé ALLENE", role: "Candidate" },
+  { name: "Thomas CERTEAUX", role: "Candidat" },
+  { name: "Marine LESAGE", role: "Candidate" },
+  { name: "Hervé VILLAIRE", role: "Candidat" },
+  { name: "Adeline DOUCY", role: "Candidate" },
+  { name: "Alain LAMARRE", role: "Candidat" },
+  { name: "Lucie VERCAUTEREN", role: "Candidate" },
 ];
 
 export default function Team() {
@@ -17,18 +24,22 @@ export default function Team() {
             L&apos;équipe
           </h2>
           <p className="mt-4 text-dark/40 font-body text-base max-w-lg mx-auto">
-            Des habitants engagés pour leur village, portés par des valeurs
+            11 habitants engagés pour Versigny, portés par des valeurs
             de proximité et de transparence.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {members.map((member, i) => (
             <div key={i} className="group text-center">
-              <div className="w-28 h-28 md:w-32 md:h-32 mx-auto rounded-2xl bg-gradient-to-br from-primary/5 to-rose/5 border border-gray-100 flex items-center justify-center text-5xl mb-4 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300 group-hover:-translate-y-1">
-                {member.placeholder}
+              <div className={`w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl bg-gradient-to-br ${i === 0 ? "from-primary/10 to-primary/5 border-primary/20" : "from-primary/5 to-rose/5 border-gray-100"} border flex items-center justify-center text-3xl md:text-4xl mb-3 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300 group-hover:-translate-y-1`}>
+                <span className="font-heading font-bold text-primary/40 text-lg">
+                  {member.name.split(" ")[0][0]}{member.name.split(" ")[1][0]}
+                </span>
               </div>
-              <h3 className="font-heading font-semibold text-dark text-sm">{member.name}</h3>
+              <h3 className={`font-heading text-dark text-sm ${i === 0 ? "font-bold" : "font-semibold"}`}>
+                {member.name}
+              </h3>
               <p className="text-xs text-dark/40 font-body mt-0.5">{member.role}</p>
             </div>
           ))}
